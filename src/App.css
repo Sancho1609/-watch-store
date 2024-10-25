@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #000000; /* Черный фон для заголовка */
+  color: #fff; /* Белый текст */
+  padding: 20px;
+}
+
+.header-container {
+  display: flex; /* Используем Flexbox для размещения элементов */
+  justify-content: space-between; /* Распределяем пространство между элементами */
+  align-items: center; /* Центрируем элементы по вертикали */
+}
+
+nav ul {
+  list-style-type: none; /* Убираем маркеры списка */
+  padding: 0;
+}
+
+nav ul li {
+  display: inline; /* Элементы списка располагаем в ряд */
+  margin: 0 15px; /* Устанавливаем отступы между элементами */
+}
+
+nav a {
+  color: #fff; /* Белый цвет ссылок */
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+}
+
+.cart {
+  margin-top: 10px; /* Отступ сверху для корзины */
+}
+
+main {
+  padding: 20px; /* Отступы для основного содержимого */
+}
+
+#main-banner {
+  background-image: url("C:\\Users\\Asus\\my-app\\src\\Image\\frame-2-2-12.png"); /* Фоновое изображение для баннера */
+  background-color: #393838; /* Серый фон, если изображение не загрузится */
+  color: #fff; /* Белый цвет текста в баннере */
+  padding: 50px; /* Отступы внутри баннера */
+  text-align: center; /* Центрируем текст внутри баннера */
+
+  display: flex; /* Используем Flexbox для размещения элементов в баннере */
+  flex-direction: column; /* Вертикальная ориентация элементов */
+  align-items: center; /* Центрируем элементы по горизонтали */
+  justify-content: flex-start; /* Выравниваем элементы по верхнему краю */
+  height: 40vh; /* Высота баннера */
+}
+
+#main-banner h2,
+#main-banner p,
+#main-banner button {
+  margin: 1; /* Убираем отступы между элементами */
+}
+
+#shop {
+  margin-top: 40px; /* Отступ сверху для раздела магазина */
+}
+
+.product-list {
+  display: flex; /* Используем Flexbox для списка продуктов */
+  flex-wrap: wrap; /* Позволяем элементам переноситься на новую строку */
+  justify-content: space-around; /* Распределяем элементы по ширине */
+}
+
+.product {
+  border: 1px solid #ddd; /* Серая рамка вокруг продуктов */
+  border-radius: 5px; /* Скругленные углы */
+  margin: 10px; /* Отступы между продуктами */
+  padding: 10px; /* Внутренние отступы */
+  text-align: center; /* Центрируем текст внутри карточки продукта */
+  background-color: #fff; /* Белый фон для карточек продуктов */
+  width: 200px; /* Ширина карточек продуктов */
+}
+
+.product img {
+  max-width: 100%; /* Максимальная ширина изображения не более 100% от родителя */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+footer {
+  text-align: center; /* Центрируем текст в подвале */
+  padding: 3px; /* Отступы внутри подвала */
+  background-color: #000000; /* Черный фон для подвала */
+  color: #fff; /* Белый цвет текста в подвале */
+}
+
+@keyframes marquee-right-to-left {
+  from { transform: translateX(80%); } /* Начальная позиция для анимации */
+  to { transform: translateX(-50%); } /* Конечная позиция для анимации */
+}
+
+.marquee {
+  overflow: hidden; /* Скрываем переполнение */
+  white-space: nowrap; /* Убираем перенос строк */
+  display: block; /* Делаем элемент блочным */
+  animation: marquee-right-to-left 10s linear infinite; /* Применяем анимацию */
+}
